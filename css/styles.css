@@ -180,6 +180,7 @@ img {
   cursor: pointer;
   background: var(--accent-color);
   color: var(--primary-color);
+  border-radius: 4px;
 }
 .hero-button:hover, 
 .hero-button:focus {
