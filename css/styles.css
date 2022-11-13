@@ -216,59 +216,29 @@ img {
   display: block;
   width: calc((100% - 90px) / 4);
 }
-
-.antenna::before{
+.benefits-item::before{
   content: '';
   display: block;
   margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
-  background-image: url(../image/antenna-1.svg);
   background-size: 70px 70px;
-  width: 270px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
+}
+.antenna::before{
+  background-image: url(../image/antenna-1.svg);
 }
 .astronaut::before{
-  content: '';
-  display: block;
-  background: #F5F4FA;
-  border-radius: 4px;
   background-image: url(../image/astronaut-1.svg);
-  background-size: 70px 70px;
-  width: 270px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
 }
 .clock::before{
-  content: '';
-  display: block;
-  background: #F5F4FA;
-  border-radius: 4px;
   background-image: url(../image/clock-1.svg);
-  background-size: 70px 70px;
-  width: 270px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
 }
 .diagram::before{
-  content: '';
-  display: block;
-  background: #F5F4FA;
-  border-radius: 4px;
-  background-image: url(../image/diagram-1.svg);
-  background-size: 70px 70px;
-  width: 270px;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
+    background-image: url(../image/diagram-1.svg);
+} 
 /* -------WORK & TEAM---------- */
 
 .title {
@@ -439,7 +409,10 @@ padding-bottom: 16px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-team-filter:hover{
+.poster{
+  display: block;
+}
+.poster:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-team-filter:nth-child(3n) {
@@ -473,6 +446,7 @@ padding-bottom: 16px;
 }
 .footer-list{
   display: flex;
+  align-items: baseline;
 }
 .logo-footer-container{
   margin-bottom: 20px;
@@ -503,7 +477,6 @@ padding-bottom: 16px;
 .footer-title{
   color: var(--primary-color);
   margin-top: 12px;
-  margin-bottom: 20px;
   font-weight: 700;
   line-height: calc(16/14);
   font-size: inherit;
